@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hackathon2.css">
+
+</head>
+<body>
+  <div class="container">
+    <h2>NHAP THONG TIN SINH VIEN</h2>
+    <form method="post" onsubmit=" saveData();">
+      <div class="form-group">
+        <label>ho va ten</label>
+        <input required type="text" id="username" placeholder="Nhap ho ten">
+      </div>
+      
+      <div class="form-group">
+        <label>Email</label>
+        <input required type="email" id="email" placeholder="Nhap email">
+      </div>
+      <div class="form-group">
+        <label>so dien thoai</label>
+        <input required type="number" id="number" placeholder="so dien thoai">
+      </div>
+      <div class="form-group">
+        <label>que quan</label>
+        <input required type="text" id="address" placeholder="nhap dia chi">
+      </div>
+      <div>
+        <p>gioi tinh</p>
+        <input type="radio" id="gender">
+        <label for="radio">nam</label>
+        <input type="radio" id="gender">
+        <label for="radio">nu</label>
+
+
+      </div>
+      
+      <div class="form-group">
+        <button type="submit">Luu Thong Tin</button>
+        
+       
+    </form>
+  </div>
+ <hr>
+	<h2>DANH SACH SINH VIEN</h2>
+  <p>tim kiem hoc vien:</p>
+<form class="example" action="/action_page.php">
+  <input type="text"  name="search">
+  <button type="submit">search</button>
+</form>
+<br>
+	<table border="1" cellpadding="5" style="width: 100%;">
+		<thead>
+			<tr>
+				<th>STT</th>
+				<th>ho ten</th>
+				<th>email</th>
+				<th>dien thoai</th>
+				<th>dia chi</th>
+        <th>gender</th>
+        <th>hanh dong</th>
+        <th></th>
+			</tr>
+		</thead>
+		<tbody id="result">
+      <tr>
+        <td>1</td>
+        <td>nguyen van a</td>
+        <td>nguyenvana@gmail.com</td>
+        <td>098765432</td>
+        <td>ha noi</td>
+        <td>nam</td>
+        <td>
+          <button class="edit">sua</button>
+          <button class="delete">xoa</button>
+        </td>
+      </tr>
+		</tbody>
+	</table>
+</div>
+<script src="hackathon2.js"></script>
+</body>
+</html>
